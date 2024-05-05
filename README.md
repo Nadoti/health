@@ -3,7 +3,7 @@ Para rodar o projeto clone o repositorio, após o clonar use o comando "npm inst
 após iniciar com o json-serve, utilize o comando "npm run dev", e pronto, o projeto estará funcionando.
 
 
-O projeto foi pensado para oferecer uma boa experiência para o usuário, com fácil nevegação, tema e cores de fácil visão e compreensão. O projeto tem 4 páginas, na qual é possivel verificar todos os profissinais cadastrados, cadastrar um, vê os detalhes desse profissional, e vê quais os profissionais estão bloqueados. Tudo feito de acordo os as regras de negócio.
+O projeto foi pensado para oferecer uma boa experiência para o usuário, com fácil nevegação, tema e cores de fácil visão e compreensão. O projeto tem 4 páginas, na qual é possivel verificar todos os profissinais cadastrados, cadastrar um, vê os detalhes desse profissional, e vê quais os profissionais estão bloqueados. Tudo feito de acordo os as regras de negócio. O projeto funciona apenas no modo DESKTOP.
 
 serviços: O projeto tem 6 requisições de API.
 
