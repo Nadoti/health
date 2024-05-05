@@ -1,10 +1,11 @@
-import { ListAllProfessionals } from "@/components/list-all-professionals"
+import { getAllProfessional } from "@/services/get-all-professional"
+import { ListAllProfessional } from "@/components/list-all-professional"
 
-export default function AllProfessional() {
-
+export default async function AllProfessional() {
+  const data = await getAllProfessional()
   return (
     <>
-      <ListAllProfessionals />
+      <ListAllProfessional listAllProfessional={data}/>
     </>
   )
 }

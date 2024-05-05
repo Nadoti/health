@@ -11,3 +11,83 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.containerInput {
+  width: 100%;
+  position: relative;
+}
+
+.contentInput {
+  width: 100%;
+  padding: 1px;
+  border-radius: 6px;
+  transition: all .3s;
+}
+
+.contentInput:hover {
+  @apply bg-gradient-primary
+}
+
+.containerInput:focus-within .contentInput {
+  @apply bg-gradient-primary;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 10px 10px 10px;
+  border-radius: 8px;
+  outline: none;
+}
+
+.input:focus + label,
+.input:not(:placeholder-shown):not(:focus) + label {
+  transform: translateY(-20px) translateX(10px);
+  @apply bg-gradient-primary;
+  font-size: 12px;
+  color: rgb(113 113 122);
+  padding: 0 6px;
+  font-weight: 500;
+}
+
+.input::placeholder {
+  color: transparent;
+}
+
+.label {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  font-size: 16px;
+  border-radius: 2px;
+  font-family: roboto;
+  transition: all .3s;
+  padding: 0 10px;
+}
+
+.error {
+  display: block;
+  font-size: 14px;
+  padding-top: 5px;
+  color: #E04B4B;
+  font-weight: 700; 
+}
+
+.input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+
+.animations {
+  animation: fadeInUp 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
